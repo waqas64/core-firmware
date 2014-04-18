@@ -10,11 +10,12 @@ SIZE = $(GCC_PREFIX)size
 DFU = dfu-util
 CURL = curl
 
-RM = rm -f
-MKDIR = mkdir -p
+RM = "C:\Program Files (x86)\Git\bin\rm.exe" -f
+MKDIR = "C:\Program Files (x86)\Git\bin\mkdir.exe" -p
+
 
 # URL to invoke cloud flashing
-CLOUD_FLASH_URL = https://api.spark.io/v1/devices/$(SPARK_CORE_ID)\?access_token=$(SPARK_ACCESS_TOKEN)
+CLOUD_FLASH_URL = https://api.spark.io/v1/devices/$(SPARK_CORE_ID)/?access_token=$(SPARK_ACCESS_TOKEN)
 
 # Recursive wildcard function
 rwildcard = $(wildcard $1$2) $(foreach d,$(wildcard $1*),$(call rwildcard,$d/,$2))

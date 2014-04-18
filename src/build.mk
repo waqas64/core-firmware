@@ -13,7 +13,9 @@ INCLUDE_DIRS += inc
 CSRC +=
 
 # C++ source files included in this build.
-CPPSRC += $(TARGET_SRC_PATH)/application.cpp
+#CPPSRC += $(TARGET_SRC_PATH)/application.cpp
+CPPSRC += $(TARGET_SRC_PATH)/SparkTimeExample.cpp
+CPPSRC += $(TARGET_SRC_PATH)/SparkTime.cpp
 CPPSRC += $(TARGET_SRC_PATH)/main.cpp
 CPPSRC += $(TARGET_SRC_PATH)/newlib_stubs.cpp
 CPPSRC += $(TARGET_SRC_PATH)/spark_utilities.cpp
